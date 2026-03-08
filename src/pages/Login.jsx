@@ -154,7 +154,7 @@ export default function Login() {
                                         autoComplete="email"
                                         className={`block w-full py-2.5 px-3 border rounded-lg shadow-sm focus:ring-violet-600 focus:border-violet-600 sm:text-sm transition-colors ${errors.email ? 'border-red-300' : 'border-gray-300'
                                             }`}
-                                        placeholder="admin@ferreteria.com"
+                                        placeholder="admin@gmail.com"
                                     />
                                     {errors.email && (
                                         <p className="mt-2 text-sm text-red-600">{errors.email.message}</p>
