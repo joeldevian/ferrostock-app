@@ -12,13 +12,13 @@ export default function Landing() {
             {/* Navbar */}
             <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-16">
+                    <div className="flex flex-col sm:flex-row justify-between items-center h-auto sm:h-16 py-4 sm:py-0 gap-4 sm:gap-0">
                         <Logo />
-                        <div className="flex items-center space-x-4">
+                        <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4">
                             <Link to="/login" className="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors">
                                 Ingresar
                             </Link>
-                            <Link to="/login" className="text-sm font-medium bg-violet-600 text-white px-4 py-2 rounded-lg hover:bg-violet-600 transition-colors shadow-sm">
+                            <Link to="/login" className="text-sm font-medium bg-violet-600 text-white px-4 py-2 rounded-lg hover:bg-violet-700 transition-colors shadow-sm text-center">
                                 Solicitar Acceso
                             </Link>
                         </div>
@@ -31,7 +31,7 @@ export default function Landing() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
 
-                        <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                        <div className="text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
                             <h1 className="text-4xl tracking-tight font-extrabold text-indigo-950 sm:text-5xl md:text-6xl">
                                 <span className="block xl:inline">Controla tu ferretería</span>{' '}
                                 <span className="block text-violet-600">desde el celular</span>
@@ -40,12 +40,12 @@ export default function Landing() {
                                 Sin papeles, sin Excel, sin líos. Todo tu inventario en un solo lugar.
                                 Descubre la forma más fácil y rápida de gestionar tu negocio.
                             </p>
-                            <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-3">
-                                <Link to="/login" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-violet-600 hover:bg-violet-600 transition-colors">
+                            <div className="mt-8 sm:max-w-lg sm:mx-auto text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row justify-center lg:justify-start gap-3 px-4 sm:px-0">
+                                <Link to="/login" className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-violet-600 hover:bg-violet-700 transition-colors">
                                     Solicitar acceso
                                     <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
                                 </Link>
-                                <a href="https://ferrostock-app.vercel.app/login" className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-violet-50 transition-colors shadow-sm">
+                                <a href="https://ferrostock-app.vercel.app/login" className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-violet-50 transition-colors shadow-sm">
                                     Ver demo
                                 </a>
                             </div>
@@ -201,21 +201,21 @@ export default function Landing() {
 
             {/* CTA Final */}
             <section className="bg-indigo-950">
-                <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between text-center lg:text-left">
                     <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                         <span className="block">¿Tienes una ferretería en Ayacucho?</span>
-                        <span className="block text-violet-600">Da el siguiente paso hoy mismo.</span>
+                        <span className="block text-violet-600 mt-1 lg:mt-0">Da el siguiente paso hoy mismo.</span>
                     </h2>
-                    <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                        <div className="inline-flex rounded-md shadow">
+                    <div className="mt-8 flex justify-center lg:mt-0 lg:flex-shrink-0">
+                        <div className="inline-flex rounded-md shadow w-full sm:w-auto">
                             <a
                                 href={whatsappUrl}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-950 bg-green-500 hover:bg-green-600 transition-colors"
+                                className="w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-950 bg-green-500 hover:bg-green-600 transition-colors"
                             >
-                                <MessageSquare className="w-5 h-5 mr-2" />
-                                Contáctanos por WhatsApp
+                                <MessageSquare className="w-5 h-5 mr-2 shrink-0" />
+                                <span className="whitespace-nowrap">Contáctanos por WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -224,15 +224,15 @@ export default function Landing() {
 
             {/* Footer */}
             <footer className="bg-white border-t border-gray-200 mt-auto">
-                <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+                <div className="max-w-7xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="flex justify-center space-x-6 md:order-2">
-                        <span className="text-gray-400 text-sm hover:text-gray-500">
+                        <span className="text-gray-400 text-sm hover:text-gray-500 text-center">
                             Hecho para ferreterías peruanas 🇵🇪
                         </span>
                     </div>
-                    <div className="mt-8 md:mt-0 md:order-1 flex items-center gap-4">
-                        <Logo className="w-6 h-6" textClassName="text-lg font-bold" />
-                        <p className="text-center text-sm text-gray-400">
+                    <div className="md:order-1 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+                        <Logo className="w-6 h-6 justify-center" textClassName="text-lg font-bold" />
+                        <p className="text-sm text-gray-400">
                             &copy; {new Date().getFullYear()} FerroStock. Todos los derechos reservados.
                         </p>
                     </div>
