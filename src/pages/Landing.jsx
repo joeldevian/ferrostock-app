@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, PackageSearch, BellRing, BarChart, Smartphone
 import Logo from '../components/ui/Logo';
 
 export default function Landing() {
-    const WHATSAPP_NUMBER = "51999888777";
+    const WHATSAPP_NUMBER = "51933585138";
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Hola%20FerroStock,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20sistema.`;
 
     return (
