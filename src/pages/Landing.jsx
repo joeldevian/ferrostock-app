@@ -45,7 +45,7 @@ export default function Landing() {
                                     Solicitar acceso
                                     <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
                                 </Link>
-                                <a href="#demo" className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-violet-50 transition-colors shadow-sm">
+                                <a href="https://ferrostock-app.vercel.app/login" className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-violet-50 transition-colors shadow-sm">
                                     Ver demo
                                 </a>
                             </div>
